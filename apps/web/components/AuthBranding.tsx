@@ -1,3 +1,5 @@
+import { HeroArt } from './HeroArt';
+
 /** Panel de marca (lado izquierdo) compartido por Login y Sign-up. */
 export function omni-stellar-omni-stellar-velarLogo({ className = '' }: { className?: string }) {
   return (
@@ -60,13 +62,9 @@ export function AuthBranding() {
         </div>
       </div>
 
-      {/* Hero: V de cristal (render real). Guardar la imagen en public/omni-stellar-velar-hero.png */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-24 flex justify-center">
-        <img
-          src="/omni-stellar-velar-hero.png"
-          alt="VELAR"
-          className="w-[520px] max-w-[85%] object-contain mix-blend-multiply"
-        />
+      {/* Hero: V de cristal (usa /omni-stellar-velar-hero.png si existe, si no un SVG hecho a mano) */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-20 flex justify-center">
+        <HeroArt />
       </div>
 
       <div className="relative z-10 flex gap-6 text-xs text-slate-500">
