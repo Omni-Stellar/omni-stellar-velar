@@ -23,7 +23,7 @@ echo "▸ Compilando contrato omni-stellar-omni-stellar-velarBond…"
 cd "$CONTRACT_DIR"
 cargo build --target wasm32-unknown-unknown --release
 
-WASM="$CONTRACT_DIR/../target/wasm32-unknown-unknown/release/omni-stellar-velar_bond.wasm"
+WASM="$CONTRACT_DIR/target/wasm32-unknown-unknown/release/omni-stellar-velar_bond.wasm"
 if [ ! -f "$WASM" ]; then
   echo "✗ WASM no generado en $WASM"; exit 1
 fi
