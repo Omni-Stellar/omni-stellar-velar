@@ -19,7 +19,7 @@ fn setup() -> (Env, Address, Address, Address, Address) {
     (env, contract_id, tse, party, buyer)
 }
 
-fn init(env: &Env, contract_id: &Address, tse: &Address, party: &Address) -> omni-stellar-omni-stellar-velarBondClient<'_> {
+fn init<'a>(env: &'a Env, contract_id: &'a Address, tse: &'a Address, party: &'a Address) -> omni-stellar-omni-stellar-velarBondClient<'a> {
     let client = omni-stellar-omni-stellar-velarBondClient::new(env, contract_id);
     let args = InitArgs {
         party_id: String::from_str(env, "party-aurora-001"),
