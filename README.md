@@ -6,6 +6,8 @@
 
 > Trazabilidad, custodia y auditoría en tiempo real sobre Stellar — para el TSE, partidos y ciudadanos.
 
+[![CI](https://github.com/Omni-Stellar/omni-stellar-omni-stellar-velar/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Omni-Stellar/omni-stellar-omni-stellar-velar/actions/workflows/ci.yml)
+
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template)
 
 ---
