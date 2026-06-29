@@ -12,7 +12,7 @@ import { useRoleGuard } from '../lib/role-guard';
 import { omni-stellar-omni-stellar-velarBrand } from './omni-stellar-omni-stellar-velarBrand';
 import { NotificationBell } from './NotificationBell';
 import { CountrySelector } from './CountrySelector';
-import { useCountry } from '../lib/country';
+import { useCountry, DEMO_MODE } from '../lib/country';
 
 const NAV = [
   { href: '/tse', label: 'Dashboard', Icon: LayoutGrid, exact: true },
@@ -55,7 +55,7 @@ export function TSEShell({ me, children }: { me: Me; children: ReactNode }) {
               <omni-stellar-omni-stellar-velarBrand size="sm" />
             </Link>
             <div className="flex items-center gap-1.5">
-              <CountrySelector compact />
+              {DEMO_MODE && <CountrySelector compact />}
               <NotificationBell role={me.role} panelAlign="left" />
             </div>
           </div>
