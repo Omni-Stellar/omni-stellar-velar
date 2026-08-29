@@ -20,6 +20,30 @@ export class LoginDto implements LoginInput {
   password!: string;
 }
 
+export class ForgotPasswordDto {
+  @ApiProperty({ example: 'comprador@omni-stellar-velar.cr' })
+  @IsEmail()
+  email!: string;
+}
+
+export class ResetPasswordDto {
+  @ApiProperty({ description: 'token_hash del enlace de recuperación' })
+  @IsString()
+  @IsNotEmpty()
+  tokenHash!: string;
+
+  @ApiProperty({ minLength: 8, example: 'omni-stellar-omni-stellar-velar12345!' })
+  @IsString()
+  @MinLength(8)
+  password!: string;
+}
+
+export class ChangeEmailDto {
+  @ApiProperty({ example: 'nuevo@omni-stellar-velar.cr' })
+  @IsEmail()
+  email!: string;
+}
+
 export class RegisterDto implements RegisterInput {
   @ApiProperty({ example: 'nuevo@omni-stellar-velar.cr' })
   @IsEmail()
