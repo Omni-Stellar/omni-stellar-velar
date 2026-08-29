@@ -3,7 +3,7 @@ import path from 'path';
 
 const nextConfig: NextConfig = {
   output: 'standalone',
-  transpilePackages: ['@omni-stellar-velar/types'],
+  transpilePackages: ['@omni-stellar-velar/types', '@omni-stellar-velar/ui'],
   turbopack: {
     root: path.resolve(__dirname, '../..'),
   },

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import type { AssembledContractDocument, ContractSummary, ContractVersionDiff, ContractVersionSummary } from '@omni-stellar-velar/types';
-import { Alert, EmptyState, Spinner, Tabs } from '../ui';
+import { Alert, EmptyState, Spinner, Tabs } from '@omni-stellar-velar/ui';
 import { createContractEngineClient, type FetchLike } from '../../lib/contract-engine';
 import { ContractSummaryPanel } from './ContractSummaryPanel';
 import { ContractDocumentPreview } from './ContractDocumentPreview';

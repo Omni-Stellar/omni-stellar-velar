@@ -31,7 +31,7 @@ import {
   Textarea,
   ThemeSwitcher,
   Tooltip,
-} from '../../components/ui';
+} from '@omni-stellar-velar/ui';
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
