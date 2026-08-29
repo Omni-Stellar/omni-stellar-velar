@@ -1,10 +1,11 @@
 /**
  * VELAR Design System — punto de entrada público.
- * Importá desde aquí: `import { ThemeSwitcher, colorVar } from '@/components/ui'`.
+ * Importá desde aquí: `import { ThemeSwitcher, colorVar } from '@omni-stellar-velar/ui'`.
  */
 export * from './tokens';
 export { cn } from './cn';
 export { ThemeProvider, ThemeSwitcher, useTheme, themeInitScript } from './theme';
+export type { ThemeProviderProps } from './theme';
 
 // Primitivas
 export { Button, IconButton } from './Button';
