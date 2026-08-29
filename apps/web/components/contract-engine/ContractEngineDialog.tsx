@@ -1,6 +1,6 @@
 'use client';
 
-import { Modal } from '@omni-stellar-velar/ui';
+import { Modal } from '../ui';
 import { ContractEngineExplorer } from './ContractEngineExplorer';
 
 export interface ContractEngineDialogProps {

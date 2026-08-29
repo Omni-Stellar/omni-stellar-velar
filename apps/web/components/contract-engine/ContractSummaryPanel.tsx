@@ -2,7 +2,7 @@
 
 import { CalendarClock } from 'lucide-react';
 import type { ContractSummary } from '@omni-stellar-velar/types';
-import { Alert, Badge, Card, CardHeader, CardTitle, Cluster, Stack } from '@omni-stellar-velar/ui';
+import { Alert, Badge, Card, CardHeader, CardTitle, Cluster, Stack } from '../ui';
 import { attentionSeverityTone, formatContractAmount, statusLabel, statusTone } from '../../lib/contract-engine';
 
 const fmtDate = (s?: string | null) =>
