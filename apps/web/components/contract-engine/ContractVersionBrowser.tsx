@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import type { ContractVersionDiff, ContractVersionSummary } from '@omni-stellar-velar/types';
-import { Alert, Badge, Button, Cluster, EmptyState, Select, Spinner, Stack } from '../ui';
+import { Alert, Badge, Button, Cluster, EmptyState, Select, Spinner, Stack } from '@omni-stellar-velar/ui';
 import { ContractVersionDiffView } from './ContractVersionDiffView';
 
 const VERSION_STATUS_TONE: Record<ContractVersionSummary['status'], 'neutral' | 'primary' | 'success'> = {

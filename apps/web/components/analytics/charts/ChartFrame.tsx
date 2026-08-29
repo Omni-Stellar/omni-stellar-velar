@@ -1,6 +1,6 @@
 'use client';
 import type { ReactNode } from 'react';
-import { colorVar } from '../../ui/tokens';
+import { colorVar } from '@omni-stellar-velar/ui';
 
 /**
  * Shared chart wrapper (issue #44): title/description, an accessible SVG
