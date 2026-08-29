@@ -2,7 +2,7 @@
  * Card — contenedor de superficie. Reutiliza `.omni-stellar-velar-card` / `.omni-stellar-velar-card-soft`.
  */
 import type { HTMLAttributes, ReactNode } from 'react';
-import { cn } from './cn.js';
+import { cn } from './cn';
 
 export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   /** `soft` usa la superficie tenue y radio medio. */
