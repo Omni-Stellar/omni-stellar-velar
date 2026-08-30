@@ -1,0 +1,30 @@
+{
+  "name": "@omni-stellar-velar/ui-sandbox",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Second consumer of @omni-stellar-velar/ui — proves the package is reusable outside apps/web (issue #76).",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "npm run build --workspace @omni-stellar-velar/ui",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "pretypecheck": "npm run build --workspace @omni-stellar-velar/ui",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@omni-stellar-velar/ui": "*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@omni-stellar-velar/config": "*",
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^9",
+    "typescript": "^5",
+    "vite": "^6.0.0"
+  }
+}
