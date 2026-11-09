@@ -273,3 +273,12 @@ Ver [CONTRIBUTING.md](CONTRIBUTING.md) y el [ROADMAP.md](ROADMAP.md) para saber 
 </div>
 
 > ⚠️ Testnet / demo. Las wallets son de custodia sin dinero real. No usar en producción sin auditoría de seguridad.
+
+## Resolved Issues
+
+The following issues have been addressed in this release:
+
+- Added issue templates for bug reports and feature requests
+- Added contributing guidelines and CODEOWNERS
+- Improved repository documentation and onboarding
+
